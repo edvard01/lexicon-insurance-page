@@ -1,3 +1,49 @@
-html {
+html body {
   margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "... nav ..."
+    "... join ..."
+    "... info ..."
+    "... how ..."
+    "... footer ...";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  height: 80vh;
+}
+
+.header-left {
+  height: 100%;
+  width: 50%;
+  background-color: #c7ddea;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.header-item-right-top {
+  height: 50%;
+
+  background-color: #f17949;
+}
+
+.header-item-right-bottom {
+  height: 50%;
+
+  background-color: #fab131;
 }
