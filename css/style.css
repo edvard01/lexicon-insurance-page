@@ -118,7 +118,7 @@ nav a {
   grid-area: join;
   grid-column-start: 2;
   grid-column-end: 2;
-  height: 95vh;
+  height: 85vh;
   background-color: #a9a19e;
 }
 
@@ -148,4 +148,87 @@ nav a {
   margin-top: 1.2rem;
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.infoboxes {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-image: linear-gradient(
+    to bottom,
+    #a9a19e,
+    #a9a19e 50%,
+    #fab131,
+    #fab131 50%
+  );
+  background-color: #a9a19e;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.infoboxes > .infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.infoboxes .container {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.infoboxes .imgcontainer {
+  height: 12vw;
+  background-color: #c7ddea;
+  margin-top: -30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  background-size: cover;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  background-position-y: 20px;
+}
+
+.infoboxes > .infobox h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 22px;
+}
+
+.infoboxes > .infobox p {
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  color: black;
+  opacity: 40%;
+  font-size: 16px;
+  font-weight: bold;
+}
+.infoboxes .children {
+  background-color: #c7ddea;
+  background-image: url("assets/child.png");
+}
+.infoboxes .oldfart {
+  background-color: #f17949;
+  background-image: url("assets/old.png");
+}
+.infoboxes .justright {
+  background-color: #fab131;
+  background-image: url("assets/adult.png");
 }
