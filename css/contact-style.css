@@ -1,0 +1,76 @@
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "form"
+    "map"
+    "footer";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  grid-area: header;
+
+  background-image: url(assets/man-baby.png);
+  background-position: 75% 100%;
+  background-size: 13% 85%;
+  background-repeat: no-repeat;
+  background-color: #c7ddea;
+}
+
+header > h1 {
+  color: black;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 4rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  grid-area: nav;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+}
+
+nav > .active {
+  color: black;
+}
+
+.message-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  grid-area: form;
+
+  height: 80vh;
+}
+
+.message-area-item {
+  height: 90%;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
