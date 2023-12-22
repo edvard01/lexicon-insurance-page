@@ -45,19 +45,28 @@ header {
   background-color: #c7ddea;
   text-align: left;
   background-image: url(assets/family.png);
-  background-size: 60% 55%;
+  background-size: 52% 45%;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .header-left h1 {
-  margin-top: 20%;
+  font-family: "Frank Ruhl Libre", serif;
+  margin-top: 15%;
   margin-left: 20%;
+  margin-bottom: 0px;
+  font-size: 4rem;
 }
 
 .header-left p {
   margin-left: 20%;
-  margin-right: 20%;
+  margin-right: 30%;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.header-left > p > .white {
+  color: white;
 }
 
 .header-left button {
@@ -77,12 +86,24 @@ header {
   width: 50%;
   text-align: center;
 }
+
 .header-item-right-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 50%;
   background-color: #f17949;
+}
+
+.header-item-right-top > p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.header-item-right-top > h3 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .header-item-right-bottom {
@@ -93,13 +114,24 @@ header {
   background-color: #fab131;
 }
 
+.header-item-right-bottom > p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.header-item-right-bottom > h3 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   grid-area: nav;
   grid-column-start: 2;
   grid-column-end: 2;
-  height: 14vh;
+  height: 10vh;
   justify-content: space-around;
   align-items: center;
   padding-left: 10%;
@@ -110,6 +142,10 @@ nav a {
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
+  color: rgb(153, 153, 153);
+}
+
+nav > .active {
   color: black;
 }
 
@@ -419,4 +455,36 @@ nav a {
   justify-self: center;
 
   font-size: 1.6rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  grid-area: footer;
+  grid-column-start: 2;
+  grid-column-end: 2;
+
+  height: 40vh;
+  background-color: #757575;
+}
+
+footer > .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  text-align: center;
+  background-color: #a9a19e;
+  width: 100%;
+}
+
+footer > a {
+  text-decoration: none;
+  color: black;
+
+  font-size: 2rem;
+  line-height: 0.5;
+  font-family: "Fira Sans", sans-serif;
 }
