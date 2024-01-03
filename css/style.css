@@ -488,3 +488,92 @@ footer > a {
   line-height: 0.5;
   font-family: "Fira Sans", sans-serif;
 }
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "join"
+      "info"
+      "about-us"
+      "instructions"
+      "footer";
+  }
+
+  header {
+    flex-direction: column;
+    height: 180vh;
+    width: 100%;
+  }
+
+  header > .header-left {
+    height: 50%;
+    width: 100%;
+    background-position: bottom center;
+    background-size: 65% 60%;
+  }
+
+  header > .header-left > h1 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 54px;
+  }
+
+  header > .header-left > p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  header > .header-left > button {
+    margin-left: 20px;
+    width: 25%;
+    padding: 1rem;
+  }
+
+  header > .header-right {
+    height: 50%;
+    width: 100%;
+  }
+
+  .join-now {
+    flex-direction: column;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .join-now > .join-now-text-box {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .join-now > .join-now-text-box > h1 {
+    margin: 0px;
+    padding: 20px 5%;
+  }
+
+  .join-now > .join-now-text-box > p {
+    margin: 0px;
+    padding: 20px 5%;
+  }
+
+  .join-now > .join-now-text-box > button {
+    margin: 20px 5%;
+  }
+
+  .infoboxes {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .infoboxes > .infobox > .container > .imgcontainer {
+    height: 32vh;
+    background-size: 30%;
+  }
+}
