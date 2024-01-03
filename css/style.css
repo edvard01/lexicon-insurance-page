@@ -489,7 +489,7 @@ footer > a {
   font-family: "Fira Sans", sans-serif;
 }
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) {
   main {
     width: 100%;
     display: grid;
@@ -514,7 +514,7 @@ footer > a {
     height: 50%;
     width: 100%;
     background-position: bottom center;
-    background-size: 65% 60%;
+    background-size: 433px 400px;
   }
 
   header > .header-left > h1 {
@@ -592,5 +592,58 @@ footer > a {
 
   .instructions > .item {
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  header > .header-left {
+    background-size: 380px 350px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .join-now > .join-now-text-box > h1 {
+    font-size: 54px;
+  }
+
+  .join-now > .join-now-text-box > p {
+    padding: 15px 5%;
+  }
+
+  .join-now > .join-now-text-box > button {
+    display: none;
+  }
+
+  .infoboxes > .infobox > .container > .imgcontainer {
+    height: 20vh;
+  }
+
+  .info > h1 {
+    font-size: 54px;
+    margin: 20px 0px;
+  }
+
+  .info > p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .instructions > .item {
+    height: 200px;
+  }
+
+  .instructions > .item > h4 {
+    margin: 20px 40px;
+  }
+
+  .instructions > .item > p {
+    margin: 25px 15px;
+    margin-top: 0px;
+  }
+
+  footer > a {
+    font-size: 20px;
   }
 }
