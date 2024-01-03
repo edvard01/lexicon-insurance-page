@@ -521,6 +521,7 @@ footer > a {
     margin-left: 20px;
     text-align: left;
     font-size: 54px;
+    margin-top: 5%;
   }
 
   header > .header-left > p {
@@ -544,6 +545,7 @@ footer > a {
     height: auto;
     margin: 0px;
     padding: 0px;
+    padding-top: 40px;
   }
 
   .join-now > .join-now-text-box {
@@ -575,5 +577,20 @@ footer > a {
   .infoboxes > .infobox > .container > .imgcontainer {
     height: 32vh;
     background-size: 30%;
+  }
+
+  .info {
+    padding: 5% 5%;
+    height: auto;
+  }
+
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .instructions > .item {
+    height: 300px;
   }
 }
