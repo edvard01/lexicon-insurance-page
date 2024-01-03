@@ -63,14 +63,100 @@ nav > .active {
   align-items: center;
 
   grid-area: form;
-
+  background-color: rgb(153, 153, 153);
   height: 80vh;
 }
 
 .message-area-item {
   height: 90%;
   width: 50%;
-  text-align: center;
+  text-align: left;
   justify-self: center;
   align-self: center;
+  margin-bottom: 150px;
+  margin-top: 75px;
+}
+
+.message-area-item > h1 {
+  font-size: 72px;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 80px;
+}
+
+.message-area-item > form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 95px;
+  width: 70%;
+}
+
+.message-area-item > form > label {
+  color: rgb(226, 226, 226);
+  font-size: 22px;
+}
+
+.message-area-item > form > .input-email {
+  width: 100%;
+  height: 60px;
+  font-size: 38px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.message-area-item > form > .input-message {
+  border-radius: 4px;
+  width: 100%;
+  height: 300px;
+  font-size: 38px;
+  border: none;
+}
+
+.message-area-item > form > button {
+  padding: 1.5rem;
+  width: 35%;
+  border-radius: 34px;
+  margin-top: 1.5rem;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.visit-us {
+  height: 65vh;
+  background-image: url(assets/map-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.visit-us > .address {
+  margin-top: 80px;
+  margin-left: 150px;
+  width: 550px;
+  height: 300px;
+  background-color: #fab131;
+  padding-top: 50px;
+}
+
+.visit-us > .address > h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.visit-us > .address > p {
+  color: white;
+  font-size: 24px;
+  padding-left: 65px;
+}
+
+footer {
+  height: 40vh;
+  background-color: #757575;
 }
