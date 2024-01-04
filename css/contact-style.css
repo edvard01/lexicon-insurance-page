@@ -257,4 +257,33 @@ footer {
     width: 50%;
     font-size: 66px;
   }
+
+  nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  nav > .top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+
+  nav > .bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+
+  nav > .top > a {
+    font-size: 32px;
+  }
+
+  nav > .bottom > a {
+    font-size: 32px;
+  }
 }
