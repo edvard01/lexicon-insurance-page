@@ -120,7 +120,7 @@ nav > .active {
   border-radius: 34px;
   margin-top: 1.5rem;
   border: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.199);
   align-self: flex-end;
   font-size: 1rem;
 }
@@ -159,4 +159,102 @@ nav > .active {
 footer {
   height: 40vh;
   background-color: #757575;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-position: 90% 100%;
+    background-size: 25% 70%;
+  }
+
+  header > h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .message-area {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 150px;
+  }
+
+  .message-area > .title {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .message-area > .inputs {
+    margin-top: 20px;
+  }
+
+  .message-area > .message-area-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .message-area > .message-area-item > h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 54px;
+  }
+
+  .message-area > .message-area-item > form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .message-area > .message-area-item > form > .input-email {
+    align-self: center;
+  }
+
+  .message-area > .message-area-item > form > button {
+    margin-top: 40px;
+  }
+
+  .visit-us {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background-position: bottom;
+  }
+
+  .visit-us > .address {
+    margin: 0;
+    position: relative;
+    top: -150px;
+    height: 250px;
+  }
+
+  .visit-us > .address > h1 {
+    font-size: 54px;
+  }
+
+  .visit-us > .address > p {
+    font-size: 22px;
+    padding-left: 110px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  header {
+    background-position: 85% 100%;
+    background-size: 50%;
+    height: 50vh;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header > h1 {
+    width: 50%;
+    font-size: 66px;
+  }
 }
