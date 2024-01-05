@@ -3,6 +3,24 @@ html body {
   padding: 0;
 }
 
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+}
+
+button {
+  font-family: "Fira Sans", sans-serif;
+}
+
 body {
   display: grid;
   grid-template-areas:

@@ -4,7 +4,7 @@ html body {
   background-color: #e9e9e9;
 }
 
-h1 h3 {
+h1 h2 h3 h4 h5 {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 40px;
 }
@@ -12,6 +12,14 @@ h1 h3 {
 p {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+}
+
+button {
+  font-family: "Fira Sans", sans-serif;
 }
 
 main {
@@ -598,6 +606,12 @@ footer > a {
 @media only screen and (max-width: 440px) {
   header > .header-left {
     background-size: 380px 350px;
+  }
+
+  header > .header-left > button {
+    width: 40%;
+    padding: 20px;
+    border-radius: 32px;
   }
 
   nav {
