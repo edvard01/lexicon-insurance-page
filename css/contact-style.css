@@ -52,7 +52,19 @@ nav a {
   color: rgb(153, 153, 153);
 }
 
-nav > .active {
+nav > .top {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav > .bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav > .bottom > .active > a {
   color: black;
 }
 
@@ -254,8 +266,9 @@ footer {
   }
 
   header > h1 {
-    width: 50%;
+    width: 60%;
     font-size: 66px;
+    margin-left: 15px;
   }
 
   nav {
@@ -263,6 +276,7 @@ footer {
     flex-direction: column;
     padding: 0;
     justify-content: space-around;
+    height: 20vh;
   }
 
   nav > .top {
@@ -279,11 +293,48 @@ footer {
     height: 50%;
   }
 
-  nav > .top > a {
-    font-size: 32px;
+  nav > .top > .nav-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
   }
 
-  nav > .bottom > a {
-    font-size: 32px;
+  nav > .bottom > .nav-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  nav > .bottom > .active {
+    background-color: #b3b3b3;
+  }
+
+  nav > .bottom > .active > a {
+    color: black;
+  }
+
+  .message-area-item > form > button {
+    width: 45%;
+  }
+
+  .visit-us {
+    background-size: fill;
+    background-position: 70% 100%;
+    height: 45vh;
+  }
+
+  .visit-us > .address {
+    width: 360px;
+    padding-top: 20px;
+  }
+
+  .visit-us > .address > p {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
